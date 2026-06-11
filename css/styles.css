@@ -371,6 +371,7 @@ section h2 {
   margin: 0 auto var(--space-xs) auto;
 }
 
+
 /* ========================= */
 /*      RESPONSIVE 768px     */
 /* ========================= */
@@ -398,11 +399,15 @@ section h2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Centrado y mejor espaciado en tarjetas */
+  /* Tarjetas uniformes y centradas */
   .subject-card,
   .work-step {
     text-align: center;
     padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   .subject-card img,
@@ -450,4 +455,18 @@ section h2 {
     padding: var(--space-xs);
     font-size: 0.9rem;
   }
+}
+
+/* ========================= */
+/*   AJUSTES GLOBALES EXTRA  */
+/* ========================= */
+
+/* Asegura que las tarjetas se estiren igual en grid */
+.subjects-grid {
+  align-items: stretch;
+}
+
+/* Altura mínima opcional para más uniformidad */
+.subject-card {
+  min-height: 180px;
 }
