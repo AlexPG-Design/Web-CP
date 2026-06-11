@@ -371,7 +371,6 @@ section h2 {
   margin: 0 auto var(--space-xs) auto;
 }
 
-
 /* ========================= */
 /*      RESPONSIVE 768px     */
 /* ========================= */
@@ -399,16 +398,14 @@ section h2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Tarjetas uniformes y centradas */
+  /* Tarjetas uniformes sin forzar altura */
   .subject-card,
   .work-step {
     text-align: center;
-    padding: 24px 14px; /* <-- padding uniforme */
+    padding: 20px 12px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    gap: 12px; /* <-- separación uniforme entre elementos */
+    justify-content: flex-start;
   }
 
   .subject-card img,
@@ -465,9 +462,4 @@ section h2 {
 /* Asegura que las tarjetas se estiren igual en grid */
 .subjects-grid {
   align-items: stretch;
-}
-
-/* Altura mínima para uniformidad */
-.subject-card {
-  min-height: 180px;
 }
