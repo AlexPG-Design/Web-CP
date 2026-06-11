@@ -376,16 +376,43 @@ section h2 {
 /* ========================= */
 
 @media (max-width: 768px) {
+
+  /* Hero más cómodo en móvil */
   .hero {
     padding: var(--space-lg) var(--space-sm);
   }
 
+  /* Márgenes laterales para toda la web */
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Título del hero más pequeño */
   .hero h1 {
     font-size: 2.2rem;
   }
 
+  /* Materias: 2 columnas en tablet */
   .subjects-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Centrado y mejor espaciado en tarjetas */
+  .subject-card,
+  .work-step {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .subject-card img,
+  .work-step img {
+    margin-bottom: 10px;
+  }
+
+  /* Opiniones más separadas */
+  .testimonial {
+    margin-bottom: 20px;
   }
 }
 
@@ -394,6 +421,8 @@ section h2 {
 /* ========================= */
 
 @media (max-width: 480px) {
+
+  /* Hero más compacto en móvil pequeño */
   .hero {
     padding: var(--space-lg) var(--space-xs);
   }
@@ -402,10 +431,12 @@ section h2 {
     font-size: 1.9rem;
   }
 
+  /* Materias: 1 columna en móvil */
   .subjects-grid {
     grid-template-columns: 1fr;
   }
 
+  /* Botones 100% ancho */
   .button-primary,
   .button-secondary,
   .contact-button {
@@ -414,6 +445,7 @@ section h2 {
     font-size: 1rem;
   }
 
+  /* Footer más compacto */
   .footer {
     padding: var(--space-xs);
     font-size: 0.9rem;
