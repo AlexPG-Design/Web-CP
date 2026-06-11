@@ -1,0 +1,420 @@
+/* ========================= */
+/*       RESET BROWSER      */
+/* ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========================= */
+/*      DESIGN SYSTEM        */
+/* ========================= */
+
+:root {
+  --primary: #2f6fed;
+  --primary-dark: #1d4fb3;
+  --text: #1a1a1a;
+  --bg: #f7f9fc;
+  --white: #ffffff;
+
+  --space-xs: 10px;
+  --space-sm: 20px;
+  --space-md: 30px;
+  --space-lg: 40px;
+  --space-xl: 60px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  --max-width: 900px;
+}
+
+/* ========================= */
+/*        GENERAL WEB        */
+/* ========================= */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ========================= */
+/*           HERO            */
+/* ========================= */
+
+.hero {
+  background: linear-gradient(135deg, var(--primary), #4a8cff);
+  padding: var(--space-xl) var(--space-sm);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.hero h1 {
+  margin-bottom: var(--space-xs);
+}
+
+.hero p {
+  margin-bottom: var(--space-sm);
+}
+
+.hero .button-primary {
+  margin-top: 30px;
+}
+
+/* ========================= */
+/*          BUTTONS          */
+/* ========================= */
+
+.button-primary,
+.button-secondary,
+.contact-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.button-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.button-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.button-secondary {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.button-secondary:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.contact-button {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.contact-button:hover {
+  background-color: var(--primary-dark);
+}
+
+/* ========================= */
+/*           ABOUT           */
+/* ========================= */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding-top: var(--space-md);
+}
+
+.about-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ========================= */
+/*          SUBJECTS         */
+/* ========================= */
+
+.subjects-content {
+  padding-top: var(--space-sm);
+}
+
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  grid-auto-flow: dense;
+}
+
+.subject-card {
+  background: var(--white);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.subject-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-xs);
+}
+
+/* ========================= */
+/*          WORKFLOW         */
+/* ========================= */
+
+.workflow-content {
+  padding-top: var(--space-sm);
+}
+
+.workflow-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: var(--space-sm);
+  gap: var(--space-md);
+}
+
+.workflow-step {
+  background: var(--white);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.workflow-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-xs);
+}
+
+/* ========================= */
+/*          REVIEWS          */
+/* ========================= */
+
+.reviews-content {
+  padding-top: var(--space-sm);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: var(--space-sm);
+  gap: var(--space-md);
+}
+
+.review-card {
+  background: var(--white);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.review-text {
+  font-style: italic;
+}
+
+.review-author {
+  display: block;
+  margin-top: var(--space-xs);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* ========================= */
+/*          CONTACT          */
+/* ========================= */
+
+.contact-content {
+  padding-top: var(--space-sm);
+}
+
+.contact-text,
+.contact-direct {
+  margin-bottom: var(--space-lg);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: var(--space-xs);
+  border-radius: var(--radius-sm);
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: var(--white);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.contact-direct {
+  text-align: center;
+}
+
+/* ========================= */
+/*          FOOTER           */
+/* ========================= */
+
+.footer {
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+  padding: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+/* ========================= */
+/*     ESPACIADO COMPACTO    */
+/*  (activar/desactivar aquí) */
+/* ========================= */
+
+/*
+section {
+    padding: var(--space-lg) var(--space-sm);
+}
+
+.about-content,
+.subjects-content,
+.workflow-content,
+.reviews-content,
+.contact-content {
+    padding-top: var(--space-xs);
+}
+
+.subjects-grid,
+.workflow-grid,
+.reviews-grid {
+    gap: var(--space-sm);
+}
+
+.subject-card,
+.workflow-step,
+.review-card {
+    padding: var(--space-sm);
+}
+*/
+
+/* ========================= */
+/*     AJUSTES PERSONALIZADOS */
+/* ========================= */
+
+/* Colocar Diseño Gráfico debajo de Informática */
+.subject-card:nth-child(4) {
+  grid-column: 2;
+}
+
+/* Centrar títulos de sección */
+/* Centrar títulos de sección */
+section h2 {
+  text-align: center;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+/* Centrar títulos de las cards */
+.subject-card h3,
+.workflow-step h3,
+.review-card h3 {
+  text-align: center;
+}
+
+/* Centrar textos de las cards */
+.subject-card p,
+.workflow-step p,
+.review-card p {
+  text-align: center;
+}
+
+/* Centrar iconos */
+.subject-icon,
+.workflow-icon {
+  display: block;
+  text-align: center;
+  margin: 0 auto var(--space-xs) auto;
+}
+
+/* ========================= */
+/*      RESPONSIVE 768px     */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--space-lg) var(--space-sm);
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .subjects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================= */
+/*      RESPONSIVE 480px     */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .hero {
+    padding: var(--space-lg) var(--space-xs);
+  }
+
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .subjects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .button-primary,
+  .button-secondary,
+  .contact-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding: var(--space-xs);
+    font-size: 0.9rem;
+  }
+}
