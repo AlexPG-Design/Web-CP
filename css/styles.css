@@ -171,9 +171,8 @@ a {
 
 .subjects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-md);
-  grid-auto-flow: dense;
 }
 
 .subject-card {
@@ -302,118 +301,32 @@ a {
 }
 
 /* ========================= */
-/*     ESPACIADO COMPACTO    */
-/*  (activar/desactivar aquí) */
-/* ========================= */
-
-/*
-section {
-    padding: var(--space-lg) var(--space-sm);
-}
-
-.about-content,
-.subjects-content,
-.workflow-content,
-.reviews-content,
-.contact-content {
-    padding-top: var(--space-xs);
-}
-
-.subjects-grid,
-.workflow-grid,
-.reviews-grid {
-    gap: var(--space-sm);
-}
-
-.subject-card,
-.workflow-step,
-.review-card {
-    padding: var(--space-sm);
-}
-*/
-
-/* ========================= */
-/*     AJUSTES PERSONALIZADOS */
-/* ========================= */
-
-/* Colocar Diseño Gráfico debajo de Informática */
-.subject-card:nth-child(4) {
-  grid-column: 2;
-}
-
-/* Centrar títulos de sección */
-/* Centrar títulos de sección */
-section h2 {
-  text-align: center;
-  margin-top: var(--space-sm);
-  margin-bottom: var(--space-md);
-}
-
-/* Centrar títulos de las cards */
-.subject-card h3,
-.workflow-step h3,
-.review-card h3 {
-  text-align: center;
-}
-
-/* Centrar textos de las cards */
-.subject-card p,
-.workflow-step p,
-.review-card p {
-  text-align: center;
-}
-
-/* Centrar iconos */
-.subject-icon,
-.workflow-icon {
-  display: block;
-  text-align: center;
-  margin: 0 auto var(--space-xs) auto;
-}
-
-
-/* ========================= */
 /*      RESPONSIVE 768px     */
 /* ========================= */
 
 @media (max-width: 768px) {
 
-  /* Hero más cómodo en móvil */
   .hero {
     padding: var(--space-lg) var(--space-sm);
   }
 
-  /* Márgenes laterales para toda la web */
   .container {
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  /* Título del hero más pequeño */
   .hero h1 {
     font-size: 2.2rem;
   }
 
-  /* Materias: 1 columna en móvil/tablet */
+  /* Materias: 1 columna */
   .subjects-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Tarjetas */
   .subject-card,
-  .work-step {
-    text-align: center;
+  .workflow-step {
     padding: 20px 12px;
-  }
-
-  .subject-card img,
-  .work-step img {
-    margin-bottom: 10px;
-  }
-
-  /* Opiniones más separadas */
-  .testimonial {
-    margin-bottom: 20px;
   }
 }
 
@@ -423,7 +336,6 @@ section h2 {
 
 @media (max-width: 480px) {
 
-  /* Hero más compacto en móvil pequeño */
   .hero {
     padding: var(--space-lg) var(--space-xs);
   }
@@ -432,7 +344,6 @@ section h2 {
     font-size: 1.9rem;
   }
 
-  /* Botones 100% ancho */
   .button-primary,
   .button-secondary,
   .contact-button {
@@ -441,30 +352,8 @@ section h2 {
     font-size: 1rem;
   }
 
-  /* Footer más compacto */
   .footer {
     padding: var(--space-xs);
     font-size: 0.9rem;
-  }
-}
-
-/* ========================= */
-/*   AJUSTES GLOBALES EXTRA  */
-/* ========================= */
-
-.subjects-grid {
-  align-items: stretch;
-}
-
-@media (max-width: 768px) {
-  .subjects .subjects-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    width: 100% !important;
-  }
-
-  .subjects .subject-card {
-    width: 100% !important;
-    max-width: 100% !important;
   }
 }
