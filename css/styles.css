@@ -455,3 +455,10 @@ section h2 {
 .subjects-grid {
   align-items: stretch;
 }
+
+@media (max-width: 768px) {
+  .subjects-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+}
