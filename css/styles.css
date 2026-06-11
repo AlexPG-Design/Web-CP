@@ -403,11 +403,12 @@ section h2 {
   .subject-card,
   .work-step {
     text-align: center;
-    padding: 20px 10px;
+    padding: 24px 14px; /* <-- padding uniforme */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    gap: 12px; /* <-- separación uniforme entre elementos */
   }
 
   .subject-card img,
@@ -466,7 +467,7 @@ section h2 {
   align-items: stretch;
 }
 
-/* Altura mínima opcional para más uniformidad */
+/* Altura mínima para uniformidad */
 .subject-card {
   min-height: 180px;
 }
