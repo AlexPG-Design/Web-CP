@@ -371,6 +371,7 @@ section h2 {
   margin: 0 auto var(--space-xs) auto;
 }
 
+
 /* ========================= */
 /*      RESPONSIVE 768px     */
 /* ========================= */
@@ -393,12 +394,12 @@ section h2 {
     font-size: 2.2rem;
   }
 
-  /* Materias: 2 columnas en tablet */
+  /* Materias: 1 columna en móvil/tablet */
   .subjects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
 
-  /* Tarjetas: solo centrado y padding suave */
+  /* Tarjetas */
   .subject-card,
   .work-step {
     text-align: center;
@@ -431,11 +432,6 @@ section h2 {
     font-size: 1.9rem;
   }
 
-  /* Materias: 1 columna en móvil */
-  .subjects-grid {
-    grid-template-columns: 1fr;
-  }
-
   /* Botones 100% ancho */
   .button-primary,
   .button-secondary,
@@ -456,14 +452,6 @@ section h2 {
 /*   AJUSTES GLOBALES EXTRA  */
 /* ========================= */
 
-/* Asegura que las tarjetas se estiren igual en grid */
 .subjects-grid {
   align-items: stretch;
 }
-
-/* Ajuste suave para que todas respiren igual sin deformarse */
-.subject-card {
-  min-height: 180px;
-}
-
-
