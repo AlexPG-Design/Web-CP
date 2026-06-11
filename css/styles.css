@@ -255,6 +255,7 @@ a {
 
 .contact-content {
   padding-top: var(--space-sm);
+  text-align: center;
 }
 
 .contact-text,
