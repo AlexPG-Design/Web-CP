@@ -301,6 +301,16 @@ a {
 }
 
 /* ========================= */
+/*   TITLES (UPDATED)        */
+/* ========================= */
+
+section h2 {
+  text-align: center;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-lg); /* más aire debajo */
+}
+
+/* ========================= */
 /*      RESPONSIVE 768px     */
 /* ========================= */
 
