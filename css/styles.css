@@ -457,8 +457,14 @@ section h2 {
 }
 
 @media (max-width: 768px) {
-  .subjects-grid {
+  .subjects .subjects-grid {
     display: grid !important;
     grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .subjects .subject-card {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 }
