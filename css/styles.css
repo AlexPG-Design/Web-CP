@@ -199,7 +199,7 @@ a {
 .workflow-grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin-top: var(--space-sm);
+  margin-top: var(--space-md);
   gap: var(--space-md);
 }
 
