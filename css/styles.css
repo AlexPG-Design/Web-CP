@@ -398,14 +398,11 @@ section h2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Tarjetas uniformes sin forzar altura */
+  /* Tarjetas: solo centrado y padding suave */
   .subject-card,
   .work-step {
     text-align: center;
     padding: 20px 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
   }
 
   .subject-card img,
@@ -463,3 +460,10 @@ section h2 {
 .subjects-grid {
   align-items: stretch;
 }
+
+/* Ajuste suave para que todas respiren igual sin deformarse */
+.subject-card {
+  min-height: 180px;
+}
+
+
